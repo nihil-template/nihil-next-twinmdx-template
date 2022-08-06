@@ -107,6 +107,7 @@ module.exports = {
   },
   plugins: [
     plugin(({ addVariant, }) => {
+      addVariant('hocus', [ '&:hover', '&:focus', ]);
       addVariant('nth-1', '&:nth-of-type(1)');
       addVariant('nth-2', '&:nth-of-type(2)');
       addVariant('nth-3', '&:nth-of-type(3)');
