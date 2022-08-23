@@ -19,7 +19,8 @@
     "backupgit": "mv ../io/.git ../backup",
     "restoregit": "mv ../backup/.git ../io",
     "export": "yarn run backupgit && yarn run remove && next build && next export -o ../io/ && touch ../io/.nojekyll && yarn run restoregit && cd ../io && git add .",
-    "clean": "yarn cache clean"
+    "clean": "yarn cache clean",
+    "open": "start http://localhost:3000"
   },
   "keywords": [],
   "author": "NIHILncunia",
