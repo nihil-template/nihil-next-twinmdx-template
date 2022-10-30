@@ -79,43 +79,6 @@ module.exports = {
     'import/no-dynamic-require': 'off',
     'import/prefer-default-export': 'off',
 
-    // 리액트 규칙
-    'react/jsx-props-no-spreading': 'off',
-    'react/forbid-prop-types': 'off',
-    'react/jsx-filename-extension': [ 'error', {
-      extensions: [ 'js', 'jsx', '.ts', '.tsx', ],
-    }, ],
-    'react/no-danger': 'off',
-    'react/jsx-curly-brace-presence': [
-      'warn',
-      { props: 'never', children: 'never', },
-    ],
-    'react/require-default-props': 'off',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/function-component-definition': 'off',
-    'react/jsx-no-useless-fragment': 'off',
-    'react/no-arrow-function-lifecycle': 'off',
-    'react/no-invalid-html-attribute': 'off',
-    'react/no-unused-class-component-methods': 'off',
-    'react/button-has-type': 'off',
-
-    // 리액트 훅스 규칙
-    'react-hooks/exhaustive-deps': 'off',
-
-    // jsx 규칙
-    'jsx-a11y/anchor-is-valid': [
-      'error',
-      {
-        components: [ 'Link', ],
-        specialLink: [ 'hrefLeft', 'hrefRight', ],
-        aspects: [ 'invalidHref', 'preferButton', ],
-      },
-    ],
-    'jsx-a11y/anchor-has-content': 'off',
-    'jsx-a11y/no-static-element-interactions': 'off',
-    'jsx-a11y/click-events-have-key-events': 'off',
-    'jsx-a11y/no-noninteractive-element-interactions': 'off',
-
     // 타입스크립트 규칙
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -135,5 +98,43 @@ module.exports = {
         'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key',
       ],
     }, ],
+
+    // 리액트 규칙
+    'react/jsx-props-no-spreading': 'off',
+    'react/forbid-prop-types': 'off',
+    'react/jsx-filename-extension': [ 'error', {
+      extensions: [ 'js', 'jsx', '.ts', '.tsx', ],
+    }, ],
+    'react/no-danger': 'off',
+    'react/jsx-curly-brace-presence': [
+      'warn',
+      { props: 'never', children: 'never', },
+    ],
+    'react/require-default-props': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/function-component-definition': 'off',
+    'react/jsx-no-useless-fragment': 'off',
+    'react/no-arrow-function-lifecycle': 'off',
+    'react/no-invalid-html-attribute': 'off',
+    'react/no-unused-class-component-methods': 'off',
+    'react/button-has-type': 'off',
+    'react/no-unknown-property': [ 'error', { ignore: [ 'css', ], }, ],
+
+    // 리액트 훅스 규칙
+    'react-hooks/exhaustive-deps': 'off',
+
+    // jsx 규칙
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: [ 'Link', ],
+        specialLink: [ 'hrefLeft', 'hrefRight', ],
+        aspects: [ 'invalidHref', 'preferButton', ],
+      },
+    ],
+    'jsx-a11y/anchor-has-content': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
   },
 };
