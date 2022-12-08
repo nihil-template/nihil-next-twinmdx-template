@@ -32,12 +32,8 @@ const IndexPage = () => {
       <AppLayout meta={meta}>
         <div css={IndexPageStyle}>메인</div>
         <div css={linkWrap}>
-          <Link href='/test' passHref>
-            <a>테스트 페이지</a>
-          </Link>
-          <Link href='/mdx' passHref>
-            <a>MDX 페이지</a>
-          </Link>
+          <Link href='/test' passHref>테스트 페이지</Link>
+          <Link href='/mdx' passHref>MDX 페이지</Link>
         </div>
       </AppLayout>
     </>

@@ -15,7 +15,7 @@ const MDXPage = ({ post, }: IMDXPageProps) => {
 
   const Div = tw.div`flex flex-row items-center justify-center`;
 
-  const HomeLink = tw.a`inline-block mt-5 p-5 bg-black-700/60 text-white text-2xl mx-auto hover:bg-black-800`;
+  const HomeLink = tw(Link)`inline-block mt-5 p-5 bg-black-700/60 text-white text-2xl mx-auto hover:bg-black-800`;
 
   return (
     <>
@@ -23,9 +23,7 @@ const MDXPage = ({ post, }: IMDXPageProps) => {
         <MDXRemote {...source} />
       </div>
       <Div>
-        <Link href='/' passHref>
-          <HomeLink>홈으로 돌아가기</HomeLink>
-        </Link>
+        <HomeLink href='/' passHref>홈으로 돌아가기</HomeLink>
       </Div>
     </>
   );

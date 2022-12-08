@@ -65,9 +65,7 @@ const TestPage = () => {
       </div>
 
       <div css={styles.linkWrap}>
-        <Link href='/' passHref>
-          <a css={styles.link}>홈으로 돌아가기</a>
-        </Link>
+        <Link href='/' passHref css={styles.link}>홈으로 돌아가기</Link>
       </div>
     </>
   );
