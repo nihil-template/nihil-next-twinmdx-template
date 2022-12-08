@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [ 'Noto Sans KR', 'sans-serif', ],
+        fa: [ 'Font Awesome 5 Free', 'sans-serif', ],
       },
       screens: {
         xs: { max: '479px', },
